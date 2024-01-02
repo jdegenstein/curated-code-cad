@@ -12,8 +12,8 @@ It's software that allows you to define 3D CAD models with code. It's a niche po
 
 I recommend reading through the entire list below to see if one chimes with you and your needs, beyond that I can make the following recommendation and points:
 <!--truncate-->
-- My main recommendation is to use one of the packages that uses a B-rep kernal (and for opensource tools that means OpenCascade, a mature C++ CAD library). Packages that do so are CadQuery, CascadeStudio, DeclaraCAD and pythonOCC. My reasons for recommending these are as follows:
-  - Most of Code-CAD tools are plagued with a CSG mindset (that is unions, subtractions and intersections of primitive shapes; cubes spheres etc). This is an inherently limited paradigm (one simple example of this is how internal fillets, which are important for reducing stress concentrations in parts, become very difficult). While CadQuery, CascadeStudio, DeclaraCAD and pythonOCC still offer CSG functionality, you're also able to move beyond.
+- My main recommendation is to use one of the packages that uses a B-rep kernel (and for opensource tools that means OpenCascade, a mature C++ CAD library). Packages that do so are CadQuery, CascadeStudio, DeclaraCAD and pythonOCC. My reasons for recommending these are as follows:
+  - Most of Code-CAD tools are plagued with a CSG mindset (that is unions, subtractions and intersections of primitive shapes; cubes spheres etc). This is an inherently limited paradigm (one simple example of this is how internal fillets, which are important for reducing stress concentrations in parts, become very difficult). While build123d, CadQuery, CascadeStudio, DeclaraCAD and pythonOCC still offer CSG functionality, you're also able to move beyond.
   - OpenCascade uses a B-rep (boundary representation) kernel, In my opinion, this means you'll be learning a future-proof tool that won't limit the types of applications you can model for, which is likely the case for mesh kernels, which will cause trouble in for some applications like optics and injection moulding.
 
 - OpenSCAD is tried and true, with lots of examples and tutorials floating around the internet. It also has a very intuitive syntax that folks without prior programming experience have been able to quickly pick up. However, some reasons you might want to look elsewhere are:
@@ -77,6 +77,12 @@ AngelCAD is capable of running OpenSCAD script for interoperability and has feat
 - [Online editor](https://bitbybit.dev/app)
 
 bitbybit is both a node editor and Code-CAD as they have exposed a [typescript](https://medium.com/@bitbybit/v0-3-0-release-typescript-in-monaco-editor-for-bit-by-bit-developers-46bcb1a3b91) interface that can be used in their app.
+
+### [build123d](https://build123d.readthedocs.io/en/latest/)
+- [Repo](https://github.com/gumyr/build123d)
+- [Community](https://discord.gg/qz3uAdF)
+- [Docs](https://build123d.readthedocs.io/en/latest/)
+- License: Apache, 2.0
 
 ### [CadHub](https://cadhub.xyz/)
 - [Repo](https://github.com/Irev-Dev/cadhub)
